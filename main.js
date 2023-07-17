@@ -5,17 +5,19 @@ const wordCounter = (value) => {
   console.log(value);
 
   if (value) {
-    // COMPLETE THE LOGIC 
-    wordCount.innerHTML = `Word Count: 0`; 
+    // COMPLETE THE LOGIC
+    const numWords = value.trim().split("");
+    wordCount.innerHTML = `Word Count: ${numWords.length}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+    error.innerHTML = "Please input text"; // UPDATE THIS
   }
 }
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
   // complete the function
+  
 }
 
 // ************************************************ //
