@@ -6,7 +6,7 @@ const wordCounter = (value) => {
 
   if (value) {
     // COMPLETE THE LOGIC
-    const numWords = value.trim().split("");
+    const numWords = value.trim().split(" ");
     wordCount.innerHTML = `Word Count: ${numWords.length}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
